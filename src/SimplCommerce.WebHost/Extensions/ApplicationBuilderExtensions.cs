@@ -108,7 +108,7 @@ namespace SimplCommerce.WebHost.Extensions
             var defaultCulture = cultures.Where(x => x.IsDefault).Select(x => new CultureInfo(x.Id)).FirstOrDefault();
             if(defaultCulture == null)
             {
-                defaultCulture = new CultureInfo("en-US");
+                defaultCulture = new CultureInfo("en-GB");
             }
 
             app.UseRequestLocalization(new RequestLocalizationOptions
